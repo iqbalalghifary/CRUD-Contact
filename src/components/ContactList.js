@@ -141,7 +141,7 @@ function ContactList() {
       <h1>Daftar Kontak</h1>
       <Button
         variant="contained"
-        color="btn btn-outline-warning"
+        color="warning" // Changed from "btn btn-outline-warning"
         startIcon={<AddIcon />}
         onClick={handleAddData}
         style={{ marginBottom: '10px' }}
