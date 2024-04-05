@@ -1,0 +1,27 @@
+.contact-list-container {
+    position: relative; /* Tambahkan posisi relatif */
+    min-height: 100vh; /* Sesuaikan tinggi latar belakang dengan konten */
+    padding: 20px; /* Sesuaikan padding sesuai kebutuhan */
+    color: white; /* Warna teks */
+    overflow: hidden; /* Hindari scrollbar */
+  }
+  
+  .contact-list-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('https://media.suara.com/pictures/970x544/2022/08/02/82055-bank-btpn.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: blur(5px); /* Menambahkan efek blur hanya pada latar belakang */
+    z-index: -1; /* Menempatkan latar belakang di bawah konten */
+    height: 100%; /* Memenuhi seluruh tinggi layar */
+  }
+
+  h1 {
+    text-align: center;
+    font-family: 'Rockwell', sans-serif;
+  }
